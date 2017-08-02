@@ -25,14 +25,14 @@ class ViewController: UIViewController {
 
     @IBAction func buttonAction(_ sender: Any) {
         glowButton.startWaving();
-        errorAnimation.rippleEffect()
+        errorAnimation.startWaving()
         self.sqView.startWaving();
 
     }
 
     @IBAction func errorAction(_ sender: Any) {
         errorAnimation.startWaving();
-        glowButton.rippleEffect()
+        glowButton.startWaving()
         self.sqView.startWaving();
     }
     
