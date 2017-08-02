@@ -35,10 +35,10 @@ UIRippleWave can be used without any wrappers nor layout and touch handling, sim
 ```swift
 
 // Start waving.
-self.uviView.startWaving();
-self.uviButton.startWavingWithColor(color: UIColor.green, repeatCount: 1);
-self.uviImageView.startWavingWithRepeatCount(repeatCount: Float.infinity);
-
+    [self.uviView setEnableWaveEffect:YES];
+    [self.uviButton startWaving];
+    [self.uviImageView startWavingWithColorWithColor:[UIColor redColor] repeatCount:1];
+    [self.uviImageView startWavingWithRepeatCountWithRepeatCount:1];
 
 ```
 

@@ -11,7 +11,7 @@ import QuartzCore
 
 @IBDesignable extension UIView {
     
-    @IBInspectable public var enableWaveEffect:Bool {
+    @objc @IBInspectable public var enableWaveEffect:Bool {
         set {
             if newValue {
                 
@@ -24,23 +24,23 @@ import QuartzCore
         
     }
     
-    public func startWavingWithRepeatCount(repeatCount:Float) {
+    @objc public func startWavingWithRepeatCount(repeatCount:Float) {
         self.startWavingWithColor(color: UIColor.lightGray, repeatCount: repeatCount);
     }
     
     // Create a pulsing, Waving view based on this one.
-    public func startWaving() {
+    @objc  public func startWaving() {
         self.isOpaque = false;
         self.clipsToBounds = false;
         self.startWavingWithColor(color: UIColor.lightGray, repeatCount: 1);
     }
     
     // Stop Waving by removing the animation from the superview
-    public func stopWaving() {
+    @objc public func stopWaving() {
         self.layer.removeAllAnimations();
     }
     
-    public func startWavingWithColor(color:UIColor, repeatCount:Float) {
+    @objc public func startWavingWithColor(color:UIColor, repeatCount:Float) {
         
         // Add Wave effect
         let borderLayer = CAShapeLayer()
@@ -89,7 +89,7 @@ import QuartzCore
         
     }
     
-    public func rippleEffect() {
+    @objc public func rippleEffect() {
         
         self.isOpaque = true;
         self.clipsToBounds = true;
