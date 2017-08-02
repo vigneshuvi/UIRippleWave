@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UIRippleWave"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "UIView+Ripple+Wave is a lightweight framework that adds a waving effect to any UIView and written in Swift."
 
   # This description is used to generate tags and improve search results.
