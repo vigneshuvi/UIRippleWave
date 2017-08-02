@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GlowEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO4-wU-iIs">
+                                <rect key="frame" x="162" y="86" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.40231841800000001" green="0.53688269850000003" blue="0.76304846999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Gc7-AI-1HS"/>
+                                    <constraint firstAttribute="height" constant="50" id="Unv-i8-90e"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.40231841800000001" green="0.53688269850000003" blue="0.76304846999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0I-Wi-JKb"/>
+                                </connections>
+                            </button>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdK-uh-g6s">
+                                <rect key="frame" x="147" y="286" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="iiu-DG-3W7"/>
+                                    <constraint firstAttribute="width" constant="80" id="mQC-Ag-TIO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableWaveEffect" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuD-zr-HZv">
+                                <rect key="frame" x="162" y="186" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1L0-fO-Qxj"/>
+                                </constraints>
+                                <state key="normal" image="warningIcon">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="errorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UuU-no-JlR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sO4-wU-iIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BNe-Aw-jW3"/>
+                            <constraint firstItem="sO4-wU-iIs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="PlE-q6-YUH"/>
+                            <constraint firstItem="OuD-zr-HZv" firstAttribute="top" secondItem="sO4-wU-iIs" secondAttribute="bottom" constant="50" id="Vwh-ch-ltK"/>
+                            <constraint firstItem="MdK-uh-g6s" firstAttribute="top" secondItem="OuD-zr-HZv" secondAttribute="bottom" constant="50" id="ZtY-dZ-AGI"/>
+                            <constraint firstItem="OuD-zr-HZv" firstAttribute="centerX" secondItem="MdK-uh-g6s" secondAttribute="centerX" id="eTJ-CE-mEU"/>
+                            <constraint firstItem="sO4-wU-iIs" firstAttribute="leading" secondItem="OuD-zr-HZv" secondAttribute="leading" id="jYF-O1-CzD"/>
+                            <constraint firstItem="sO4-wU-iIs" firstAttribute="trailing" secondItem="OuD-zr-HZv" secondAttribute="trailing" id="yWv-Q6-StK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorAnimation" destination="OuD-zr-HZv" id="3rD-dc-UiE"/>
+                        <outlet property="glowButton" destination="sO4-wU-iIs" id="7gh-Bx-qYu"/>
+                        <outlet property="sqView" destination="MdK-uh-g6s" id="4bs-Qp-wZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="warningIcon" width="90" height="90"/>
+    </resources>
+</document>

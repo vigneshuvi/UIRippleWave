@@ -65,3 +65,9 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+Examples/GlowEffect/GlowEffect.xcworkspace/*
+Examples/GlowEffect/xcuserdata
+Examples/GlowEffect/xcodebuild.log
+Examples/GlowEffect/build
+Examples/GlowEffect/Pods/*
