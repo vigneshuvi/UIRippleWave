@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "UIView+Ripple+Wave is a lightweight framework that adds a waving effect to any UIView and written in Swift."
+  s.description  = "UIRippleWave can be used without any wrappers nor layout and touch handling, simply call the start wave function."
 
   s.homepage     = "https://github.com/vigneshuvi/UIRippleWave"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
