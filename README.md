@@ -12,7 +12,7 @@ UIView+Ripple+Wave is a lightweight framework that adds a waving effect to any U
 
 [UIRippleWave]: https://github.com/vigneshuvi/UIRippleWave/blob/master/Screenshots/UIRippleWave.gif
 
-## iOS/MacOS import headers
+## iOS import headers
 
 First thing is to import the framework. See the Installation instructions on how to add the framework to your project.
 
@@ -21,9 +21,10 @@ First thing is to import the framework. See the Installation instructions on how
 //iOS - Objective-C
 @import UIRippleWave;
 
-//iOS-Swift
+//iOS - Swift
 import UIRippleWave
 
+```
 
 ## Example
 
