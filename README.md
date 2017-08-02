@@ -1,5 +1,5 @@
 [![Language Swift 3](https://img.shields.io/badge/Language-Swift%203-orange.svg)](https://developer.apple.com/swift)
-[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Objective-C compatible](https://img.shields.io/badge/Objective%20C%20-compatible-brightgreen.svg)](https://developer.apple.com/documentation/objectivec)
 
 
 # UIRippleWave
